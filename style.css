@@ -1,3 +1,4 @@
+
 #contenedor {
     display: flex;
     justify-content: space-between;
@@ -27,7 +28,8 @@
     border: 10px solid black;
     padding: auto;
 }
-#continuar:hover{
+
+#continuar:hover {
     background-color: rgb(74, 134, 114);
 }
 
@@ -40,4 +42,25 @@
     border: 10px solid black;
     padding: auto;
 
+}
+
+nav {
+    background-color: rgba(77, 19, 185, 0.838);
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: auto;
+    text-transform: uppercase;
+    background-color: rgba(231, 7, 164, 0.866);
+    color: rgba(15, 14, 14, 0.93);
+    padding: 10px;
+    border-radius: 7%;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
 }
