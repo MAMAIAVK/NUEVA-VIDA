@@ -47,6 +47,9 @@
 nav {
     background: linear-gradient(90deg, rgba(77, 19, 185, 0.838), rgb(85, 160, 41), red);
     padding: 15px;
+    position: fixed;
+    width: 100vw;
+    
 }
 
 nav ul {
@@ -67,6 +70,8 @@ nav ul li {
 
 .submenu {
     display: none;
+    position: absolute;
+    top:auto
 }
 
 .submenu li:hover {
