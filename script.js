@@ -44,7 +44,7 @@ console.log(5 <= 4);
 console.log(5 === "5"); //estricitamente igual que (compara tambien si el mismo tipo de dato)
 console.log(5 != 4); //no es igual que
 console.log("a" > "b"); // comparar letras (ordenar alfabeticamente)
-console.log("cortazar">"navarro");
+console.log("cortazar" > "navarro");
 
 
 
@@ -86,9 +86,14 @@ document.body.style.color = "red";
 function saludar() {
     alert("Bienvenido");
 }
+function modoDia() {
+    document.body.style.color = "black";
+    document.body.style.backgroundColor = "white";
+}
 
-saludar ();
-
-
+function modoNoche(){
+    document.body.style.color = "white";
+    document.body.style.backgroundColor = "black";
+}
 
 
