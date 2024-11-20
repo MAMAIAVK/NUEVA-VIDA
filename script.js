@@ -41,6 +41,7 @@ console.log(5 < 4); //menor que
 console.log(5 == 4); //igual que 
 console.log(5 >= 4);
 console.log(5 <= 4);
+console.log(5 == "5");
 console.log(5 === "5"); //estricitamente igual que (compara tambien si el mismo tipo de dato)
 console.log(5 != 4); //no es igual que
 console.log("a" > "b"); // comparar letras (ordenar alfabeticamente)
@@ -79,6 +80,13 @@ if (premium) {
 document.getElementById("texto").innerHTML = "hola que tal" + nombreUsuario;
 document.getElementById("caja").innerHTML = "<p>hasta luego lucas</p>";
 
+// selecciona el primer elemento //
+document.querySelector("#texto").innerHTML = "metiendo codigo en primer texto";
+
+let texto = document.getElementById("texto");
+texto.innerHTML = "he guardado mi selector  en una variable";
+
+
 
 document.body.style.color = "red";
 
@@ -91,7 +99,7 @@ function modoDia() {
     document.body.style.backgroundColor = "white";
 }
 
-function modoNoche(){
+function modoNoche() {
     document.body.style.color = "white";
     document.body.style.backgroundColor = "black";
 }
