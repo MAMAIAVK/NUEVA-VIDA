@@ -104,4 +104,8 @@ function modoNoche() {
     document.body.style.backgroundColor = "black";
 }
 
+function saludarUsuario(){
+    let inputUsuario = document.querySelector("#nombre-usuario").value
+    alert("Hola de nuevo "+inputUsuario);
 
+}
