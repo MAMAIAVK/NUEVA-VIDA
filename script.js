@@ -104,8 +104,17 @@ function modoNoche() {
     document.body.style.backgroundColor = "black";
 }
 
-function saludarUsuario(){
+function saludarUsuario() {
     let inputUsuario = document.querySelector("#nombre-usuario").value
-    alert("Hola de nuevo "+inputUsuario);
+    let generoFemenino = document.getElementById("femenino")
+    let generoMasculino = document.getElementById("masculino")
 
+    if (generoFemenino.checked) {
+        alert("Bienvenida " + inputUsuario);
+    } else if (generoMasculino.checked) {
+        alert("bienvenido " + inputUsuario);
+    } else {
+        alert("hola caracola " + inputUsuario);
+    }
 }
+
