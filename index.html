@@ -74,25 +74,38 @@
             </ul>
         </div>
     </nav>
-
+    
 
 
     <main>
+        <p>Lista de usuarios:</p>
+    <ul id="contenedor-usuarios">
+
+    </ul>
+
+
+
 
         <label for="nombre-usuario">Nombre de usuario:</label>
         <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="maria">
-       
+
         <br>
         <p>Indica tu genero</p>
 
-        <input type="radio" name="genero" id="femenino" value="femenino" >
+        <input type="radio" name="genero" id="femenino" value="femenino">
         <label for="genero"> Femenino:</label>
         <input type="radio" name="genero" id="masculino" value="masculino">
         <label for="genero"> Masculino</label>
         <br>
         <br>
+
         <label for="email">Correo electronico</label>
         <input type="email" name="gmail" placeholder="Ejemplo@gmail.com" required>
+        <br>
+        <br>
+        <input type="checkbox" name="horoscopo">
+        <label for="horoscopo">quieres recibir notificaciones de tu horoscopo</label>
+        <br>
         <br>
         <br>
         <button onclick=" saludarUsuario()">Saludame</button>

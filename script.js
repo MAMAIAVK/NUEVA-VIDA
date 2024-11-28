@@ -46,9 +46,10 @@ console.log(5 === "5"); //estricitamente igual que (compara tambien si el mismo 
 console.log(5 != 4); //no es igual que
 console.log("a" > "b"); // comparar letras (ordenar alfabeticamente)
 console.log("cortazar" > "navarro");
-
-
-
+// & = y
+// || = o
+// [] = cajon desastre
+// ${} = 
 
 if (edad >= 18) {
     alert("eres mayor de edad");
@@ -88,7 +89,8 @@ texto.innerHTML = "he guardado mi selector  en una variable";
 
 
 
-document.body.style.color = "red";
+document.body.style.color = "blue";
+
 
 //funciones
 function saludar() {
@@ -116,5 +118,16 @@ function saludarUsuario() {
     } else {
         alert("hola caracola " + inputUsuario);
     }
+    mostrarUsuario(inputUsuario);
 }
 
+function mostrarUsuario(inputUsuario) {
+    const contenedorUsuarios = document.querySelector("#contenedor-usuarios")
+    const elementoUsuario = document.createElement("li")
+
+    //ejemplos de usar texto + datos js
+    //elementoUsuario.innerHTML = "hola" + inputUsuario;
+    //elementoUsuario.innerHTML = `hola ${inputUsuario}`
+    elementoUsuario.innerHTML = inputUsuario;
+    contenedorUsuarios.appendChild(elementoUsuario);
+}
